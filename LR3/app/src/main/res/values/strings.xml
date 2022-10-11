@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LR3</string>
+
+    <string-array name="genres">
+        <item>Рок</item>
+        <item>Поп</item>
+        <item>Джаз</item>
+        <item>Фонк</item>
+        <item>Классический</item>
+        <item>Инди-рок</item>
+        <item>Панк-рок</item>
+        <item>Диско</item>
+        <item>Хип-хоп</item>
+        <item>Электро</item>
+    </string-array>
+</resources>

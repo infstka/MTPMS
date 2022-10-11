@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MTPMS/LR3/app/src/main/res/layout/activity_main.xml" value="0.26934587430525864" />
+        <entry key="..\:/MTPMS/LR3/app/src/main/res/layout/first_landscape.xml" value="0.26934587430525864" />
+        <entry key="..\:/MTPMS/LR3/app/src/main/res/layout/first_portrait.xml" value="0.26934587430525864" />
+        <entry key="..\:/MTPMS/LR3/app/src/main/res/layout/fourth_landscape.xml" value="0.26934587430525864" />
+        <entry key="..\:/MTPMS/LR3/app/src/main/res/layout/fourth_portrait.xml" value="0.26934587430525864" />
+        <entry key="..\:/MTPMS/LR3/app/src/main/res/layout/second_landscape.xml" value="0.22" />
+        <entry key="..\:/MTPMS/LR3/app/src/main/res/layout/second_portrait.xml" value="0.33" />
+        <entry key="..\:/MTPMS/LR3/app/src/main/res/layout/third_landscape.xml" value="0.26934587430525864" />
+        <entry key="..\:/MTPMS/LR3/app/src/main/res/layout/third_portrait.xml" value="0.26934587430525864" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
