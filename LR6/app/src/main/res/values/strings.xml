@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LR6</string>
+    <string name="name">Название</string>
+    <string name="auditory">Аудитория</string>
+    <string name="time">Время</string>
+    <string name="lector">Лектор</string>
+    <string name="day">День</string>
+    <string name="week">Неделя</string>
+</resources>
