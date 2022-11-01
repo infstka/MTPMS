@@ -22,6 +22,17 @@ public class ContentFragment2 extends Fragment {
 
     FragmentContent2Binding binding;
 
+    /** onCreate(создание фрагмента) -
+     * onCreateView(фрагмент создает представление) -
+     * onViewCreated(вызыв после создания представления фрагмента) -
+     * onViewStateCreated(получает состояние представления фрагмента) -
+     * onStart(когда фрагмент становится видимым) -
+     * onResume(когда фрагмент становится активным) -
+     * onPause(видимый, но не активный) -
+     * onStop(не явл. видимым) -
+     * onSaveInstanceState -
+     * onDestroyView(уничтожается представление фрагмента) -
+     * onDestroy(уничтожается фрагмент)**/
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,7 +54,6 @@ public class ContentFragment2 extends Fragment {
             String aud = intent.getStringExtra("aud");
             String time = intent.getStringExtra("time");
             String lector = intent.getStringExtra("lector");
-            String lesson = intent.getStringExtra("lesson");
 
             binding.nameLesson.setText(name);
             binding.audLesson.setText(aud);

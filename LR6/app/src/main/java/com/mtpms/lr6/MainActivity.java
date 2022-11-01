@@ -1,9 +1,12 @@
 package com.mtpms.lr6;
 
+import static java.util.Collections.sort;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -41,13 +44,20 @@ public class MainActivity extends AppCompatActivity {
                 addContact();
                 return true;
             case R.id.sort:
-                Collections.sort(lessons);
+                sort(lessons);
                 adapter.notifyDataSetChanged();
+            case R.id.up:
+                up();
+                return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
 
+    private void up() {
+        Intent intent = new Intent(this, MainActivity3.class);
+        startActivity(intent);
+    }
 
     private void addContact() {
         Intent intent = new Intent(this, MainActivity3.class);

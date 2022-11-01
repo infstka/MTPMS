@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
-public class JSONHelper {
+public class JSON {
     private static final String FILE_NAME = "LR6.json";
 
     static boolean exportToJSON(Context context, List<Lesson> dataList) {

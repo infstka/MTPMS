@@ -36,10 +36,10 @@ public class MainActivity4 extends AppCompatActivity {
         lector.setText(bundle.getString("lector"));
 
 
-        if (JSONHelper.importFromJSON(this) == null)
+        if (JSON.importFromJSON(this) == null)
             lessonList = new ArrayList<>();
         else
-            lessonList = JSONHelper.importFromJSON(this);
+            lessonList = JSON.importFromJSON(this);
 
         listAdapter = new ListAdapter(this, (ArrayList<Lesson>) lessonList);
 
@@ -54,7 +54,7 @@ public class MainActivity4 extends AppCompatActivity {
             Lesson.time = time.getText().toString();
             Lesson.lector = lector.getText().toString();
             lessonList.add(Lesson);
-            JSONHelper.exportToJSON(this, lessonList);
+            JSON.exportToJSON(this, lessonList);
             listAdapter.notifyDataSetChanged();
             Intent intentPrev = new Intent(MainActivity4.this, MainActivity.class);
             startActivity(intentPrev);

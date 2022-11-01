@@ -24,10 +24,10 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-        if (JSONHelper.importFromJSON(this) == null)
+        if (JSON.importFromJSON(this) == null)
             lessonList = new ArrayList<>();
         else
-            lessonList = JSONHelper.importFromJSON(this);
+            lessonList = JSON.importFromJSON(this);
 
         Button save = findViewById(R.id.save);
         EditText name = findViewById(R.id.name);
@@ -44,7 +44,7 @@ public class MainActivity3 extends AppCompatActivity {
                 Lesson Lesson = new Lesson(name.getText().toString(), aud.getText().toString(), lector.getText().toString(), time.getText().toString());
                 lessonList.add(Lesson);
 
-                JSONHelper.exportToJSON(this, lessonList);
+                JSON.exportToJSON(this, lessonList);
 
                 Intent intent = new Intent(MainActivity3.this, MainActivity.class);
                 startActivity(intent);
@@ -55,6 +55,7 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
     }
+    /**addToBackStack**/
     public void back(View view)
     {
         Intent intent = new Intent(this, MainActivity.class);

@@ -29,12 +29,22 @@ public class ContentFragment extends Fragment implements OnSelectedLessonListene
     private ListAdapter adapter;
     private List<Lesson> lessons;
     FragmentContentBinding binding;
-
+/** onCreate(создание фрагмента) -
+ * onCreateView(фрагмент создает представление) -
+ * onViewCreated(вызыв после создания представления фрагмента) -
+ * onViewStateCreated(получает состояние представления фрагмента) -
+ * onStart(когда фрагмент становится видимым) -
+ * onResume(когда фрагмент становится активным) -
+ * onPause(видимый, но не активный) -
+ * onStop(не явл. видимым) -
+ * onSaveInstanceState -
+ * onDestroyView(уничтожается представление фрагмента) -
+ * onDestroy(уничтожается фрагмент)**/
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentContentBinding.inflate(inflater, container, false);
-        lessons = JSONHelper.importFromJSON(getActivity());
+        lessons = JSON.importFromJSON(getActivity());
         if(lessons!=null){
             adapter = new ListAdapter(getContext(), (ArrayList<Lesson>) lessons);
             binding.listview.setAdapter(adapter);
@@ -136,7 +146,7 @@ public class ContentFragment extends Fragment implements OnSelectedLessonListene
     private void DeleteLesson(int position) {
         Lesson lesson = (Lesson) lessons.toArray()[position];
         lessons.remove(lesson);
-        JSONHelper.exportToJSON(super.getContext(), lessons);
+        JSON.exportToJSON(super.getContext(), lessons);
         adapter.notifyDataSetChanged();
     }
 

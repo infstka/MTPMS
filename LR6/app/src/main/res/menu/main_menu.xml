@@ -8,5 +8,8 @@
         android:id="@+id/sort"
         android:orderInCategory="1"
         android:title="Сортировка"/>
-
+    <item
+        android:id="@+id/up"
+        android:orderInCategory="1"
+        android:title="UP"/>
 </menu>
