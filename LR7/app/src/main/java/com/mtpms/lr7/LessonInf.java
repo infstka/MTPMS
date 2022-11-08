@@ -219,20 +219,6 @@ public class LessonInf extends AppCompatActivity {
         {
             Toast.makeText(getApplicationContext(), ":(", Toast.LENGTH_SHORT).show();
         }
-//        lessons = JSON.importFromJSON(this);
-//        if(lessons == null)
-//        {
-//            lessons = new ArrayList<>();
-//        }
-//        for(Lesson lesson : lessons)
-//        {
-//            if(lesson.equals(Lesson))
-//            {
-//                lessons.remove(lesson);
-//                break;
-//            }
-//        }
-//        JSON.exportToJSON(this, lessons);
     }
 
     public void backToTT()
@@ -290,14 +276,6 @@ public class LessonInf extends AppCompatActivity {
         db = new DB(this);
         sql = db.getWritableDatabase();
         rowId = sql.insert(DB.DB_TABLE, null, cv);
-//        Lesson lesson = new Lesson(name, time, aud, lector, day, week);
-//        lessons = JSON.importFromJSON(this);
-//        if(lessons == null)
-//        {
-//            lessons = new ArrayList<>();
-//        }
-//        lessons.add(lesson);
-//        JSON.exportToJSON(this, lessons);
     }
 
     public void back(View view)

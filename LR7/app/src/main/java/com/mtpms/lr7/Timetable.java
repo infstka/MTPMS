@@ -135,6 +135,7 @@ public class Timetable  extends AppCompatActivity {
 
         }
 
+        /**12**/
         if(sbd.isChecked()) {
             db = new DB(this);
             sql = db.getReadableDatabase();

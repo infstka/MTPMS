@@ -51,6 +51,7 @@ public class StateAdapter extends RecyclerView.Adapter<StateAdapter.ViewHolder>
         return basses.size();
     }
 
+    //сохраняет ссылки на необходимые в элементе списка шаблоны
     public static class ViewHolder extends RecyclerView.ViewHolder
     {
         final ImageView imgV;

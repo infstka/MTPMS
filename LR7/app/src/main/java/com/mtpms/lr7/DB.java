@@ -36,10 +36,12 @@ public class DB extends SQLiteOpenHelper
                 WEEK_COL + " INTEGER);");
     }
 
-    @Override
+    @Override /**7**/
     public void onUpgrade(SQLiteDatabase db, int oldV, int newV)
     {
      db.execSQL("DROP TABLE IF EXISTS " + DB_TABLE);
      onCreate(db);
     }
+    /**for query**/
+    //имя таблицы, возвращаемые столбцы, where, значение аргументов, групбай, хэвин,
 }

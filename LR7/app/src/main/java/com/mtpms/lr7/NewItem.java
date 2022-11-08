@@ -134,6 +134,7 @@ public class NewItem extends AppCompatActivity {
 
         changeLng();
 
+        /**8**/
         ContentValues cv = new ContentValues();
         cv.put("name", name);
         cv.put("time", time);
@@ -145,14 +146,6 @@ public class NewItem extends AppCompatActivity {
         db = new DB(this);
         sql = db.getWritableDatabase();
         rowId = sql.insert(DB.DB_TABLE, null, cv);
-//        Lesson lesson = new Lesson(name, time, aud, lector, day, week);
-//        lessons = JSON.importFromJSON(this);
-//        if(lessons == null)
-//        {
-//            lessons = new ArrayList<>();
-//        }
-//        lessons.add(lesson);
-//        JSON.exportToJSON(this, lessons);
 
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
