@@ -21,6 +21,7 @@ public class ItemRepository {
     }
 
     //класс хранителя данных, что можно наблюдать. Хранит последнюю версию данных
+    //помещение в него и получение из него объектов
     LiveData<List<BassItem>> getAllItems()
     {
         return AllItems;

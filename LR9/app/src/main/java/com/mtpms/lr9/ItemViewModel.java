@@ -10,6 +10,7 @@ import java.util.List;
 public class ItemViewModel extends AndroidViewModel {
 
     //предоставляет данные для ПИ. Действует как центр связи между репоzиторием и ПИ
+    //ViewModelProviders для связи с активити
 
     private ItemRepository ir;
     private final LiveData<List<BassItem>> AllItems;
