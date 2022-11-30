@@ -77,6 +77,7 @@ fun main()
 
     //2c. Объявите переменную типа Int? Введите с консоли число (или пустую строку)
     val CONSTANT_STRING = "Constant"
+    //13 вопрос
     var input: Int? = null //No more NullPointerException
 
     println("-------------------- 2c -------------------- ");
@@ -93,11 +94,11 @@ fun main()
 
     fun isValid(login: String, password: String): Boolean
     {
+        //24 вопрос
         val notNull: () -> Boolean = { !login.isEmpty() && !password.isEmpty() }
 
         return (notNull() &&
-                password.trim().length >= 6 &&
-                password.trim().length <= 12)
+                password.trim().length >= 6 && password.trim().length <= 12)
     }
     println("-------------------- 3a -------------------- ");
     println(isValid("malder800@gmail.com", "Password").toString())
@@ -122,6 +123,7 @@ fun main()
         if (operation != '+' && operation != '-' && operation != '*' && operation != '/')
             throw Exception();
 
+        //8 вопрос
         when (operation) {
             '+' -> return a.toDouble() + b.toDouble();
             '-' -> return a.toDouble() - b.toDouble();
@@ -151,7 +153,8 @@ fun main()
     println(indexOfMax(intArrayOf()).toString())
     println(indexOfMax(intArrayOf(1, 2, 3, 4, 5, 100, 4)).toString())
 
-    //функция расщирения
+    //20 вопрос
+    //функция расширения
     fun IntArray.indexOfMax(a: IntArray): Int? {
         var maxElem: Int? = a.maxOrNull();
         return maxElem;
@@ -294,6 +297,7 @@ fun main()
     var mapMarks = mapOf("First" to 6, "Second" to 40, "Third" to 26, "Fourth" to 35, "Fifth" to 19,
         "Sixth" to 22, "Seventh" to 2, "Eighth" to 15, "Ninth" to 31, "Tenth" to 9)
 
+    //11 вопрос
     mapMarks.mapValues {
         when {
 
