@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "rudenia.fit.bstu.lab14oop"
+        applicationId "com.mtpms.lr14"
         minSdkVersion 22
         targetSdkVersion 31
         versionCode 1

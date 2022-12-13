@@ -316,6 +316,7 @@ public class MainActivity extends AppCompatActivity {
         updateLocationUI();
     }
 
+    //проверка разрешений
     private boolean checkPermissions() {
         int permissionState = ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_FINE_LOCATION);
